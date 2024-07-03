@@ -1,12 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
-use App\Models\Activities;
-use App\Http\Requests\StoreActivitiesRequest;
-use App\Http\Requests\UpdateActivitiesRequest;
+use App\Models\City;
+use App\Http\Requests\StoreCityRequest;
+use App\Http\Requests\UpdateCityRequest;
+use App\Http\Controllers\Controller;
 
-class ActivitiesController extends Controller
+
+class CityController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +29,7 @@ class ActivitiesController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreActivitiesRequest $request)
+    public function store(StoreCityRequest $request)
     {
         //
     }
@@ -35,7 +37,7 @@ class ActivitiesController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Activities $activities)
+    public function show(City $city)
     {
         //
     }
@@ -43,7 +45,7 @@ class ActivitiesController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Activities $activities)
+    public function edit(City $city)
     {
         //
     }
@@ -51,7 +53,7 @@ class ActivitiesController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateActivitiesRequest $request, Activities $activities)
+    public function update(UpdateCityRequest $request, City $city)
     {
         //
     }
@@ -59,7 +61,7 @@ class ActivitiesController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Activities $activities)
+    public function destroy(City $city)
     {
         //
     }
